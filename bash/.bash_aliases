@@ -24,5 +24,5 @@ alias apt-search='apt-cache search'
 alias ch='history | grep'
 
 alias todo='/media/tom/hd/dotfiles/script/todo.txt_cli-2.9/todo.sh'
-alias sublime='/home/tom/installs/Sublime\ Text\ 2/sublime_text'
-alias pycharm='/home/tom/installs/pycharm-community-3.0.2/bin/pycharm.sh'
+alias sublime='/home/tom/software/sublime_text_3/sublime_text'
+alias pycharm='/home/tom/software/pycharm-community-3.1.1/bin/pycharm.sh'
