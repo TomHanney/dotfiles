@@ -23,6 +23,6 @@ alias apt-search='apt-cache search'
 ## shortcut searches in the cl history
 alias ch='history | grep'
 
-alias todo='/home/tom/scripts/todo.txt_cli-2.9/todo.sh'
+alias todo='/media/tom/hd/dotfiles/script/todo.txt_cli-2.9/todo.sh'
 alias sublime='/home/tom/installs/Sublime\ Text\ 2/sublime_text'
 alias pycharm='/home/tom/installs/pycharm-community-3.0.2/bin/pycharm.sh'
