@@ -3,10 +3,10 @@
 ## Remember to install cifs-utils to fix errors like:
 ## mount: wrong fs type, bad option, bad superblock on //192.168.1.69/Data
 ## [http://stackoverflow.com/questions/6734400/what-does-cifs-mount-failed-w-return-code-22-indicate]
-alias mount-gracie='sudo mount -t cifs -o user=tom,sec=ntlm //192.168.1.68/Data /home/share/gracie'
+alias mount-gracie='sudo mount -t cifs -o user=tom,sec=ntlm //192.168.1.68/Data /media/tom/gracie'
 ## Use ip to instead of stimpy in the mount command now, but the mechanic is still 
 ## to connect via the pi (stimpy) samba service
-alias mount-lacie='sudo mount -t cifs -o user=tom,uid=tom,gid=tom //192.168.1.69/lacie/tom /home/share/lacie'
+alias mount-lacie='sudo mount -t cifs -o user=tom,uid=tom,gid=tom //192.168.1.69/lacie/tom /media/tom/lacie'
 
 ## Not sure about the persistence of the history file
 ## Might need to run this every time on shutdown and pipe output to file
