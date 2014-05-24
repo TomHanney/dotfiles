@@ -12,6 +12,11 @@ set number
 " show the status bar
 set laststatus=2
 
+" imported from cheatsheet
+set ruler
+set showcmd
+set showmode
+
 " highlighting
 syntax on
 
@@ -66,4 +71,4 @@ set hidden
 set tags=./tags,tags;
 
 set background=dark
-colorscheme monokai
+"colorscheme monokai
