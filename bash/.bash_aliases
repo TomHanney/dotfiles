@@ -25,4 +25,4 @@ alias ch='history | grep'
 
 alias todo='/media/tom/hd/dotfiles/script/todo.txt_cli-2.9/todo.sh'
 alias sublime='/home/tom/software/sublime_text_3/sublime_text'
-alias pycharm='/home/tom/software/pycharm-community-3.1.1/bin/pycharm.sh'
+alias pycharm='/home/tom/software/pycharm-community-3.4.1/bin/pycharm.sh'

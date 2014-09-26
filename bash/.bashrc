@@ -114,7 +114,11 @@ fi
 export PATH=$PATH:/home/tom/scripts
 
 # Java installation
-export PYCHARM_JDK=/home/tom/installs/jdk1.7.0_45/bin/java
+JAVA_LOCATION=~/software/jdk1.7.0_67/bin
+echo Java location: $JAVA_LOCATION
+export PYCHARM_JDK=$JAVA_LOCATION/java
+export JAVA_HOME=$JAVA_LOCATION/java
+export PATH=$PATH:$JAVA_LOCATION
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -129,4 +133,3 @@ fi
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-PATH=~/installs/Qt/5.1.0/gcc/bin:/usr/local/heroku/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/tom/scripts
