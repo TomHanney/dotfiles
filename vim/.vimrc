@@ -38,6 +38,22 @@ au! FileType python setl nosmartindent
 au FileType python set omnifunc=pythoncomplete#Complete
 au FileType java set omnifunc=javacomplete#Complete
 
+au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
+au FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
+au FileType haskell nnoremap <buffer> <silent> <F3> :HdevtoolsInfo<CR>
+
+let g:syntastic_haskell_checkers = ['ghc-mod']
+
+" ghc-mod: Reload
+map <silent> tu :call GHC_BrowseAll()<CR>
+" ghc-mod: Type Lookup
+map <silent> tw :call GHC_ShowType(1)<CR>
+
+" haskell repl uing vim-slime
+" ctrl-c ctrl-c sends current visual mode block to tmux session
+let g:slime_target = "tmux"
+let g:slime_paste_file = tempname()
+
 " shortcut to display open buffers (overrides page down...)
 " REMOVED: prefer to keep C-b on page down... can use :ls to display all
 " open buffers
