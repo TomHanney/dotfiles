@@ -7,11 +7,11 @@ command fortune | cowsay
 ## googlecl reads info from my google profile
 
 echo
-echo Upcoming:
-echo ---------
-google calendar list --date `date +%F`,`date --date "next month" +%F`
-echo 
-
+## echo Upcoming:
+## echo ---------
+## google calendar list --date `date +%F`,`date --date "next month" +%F`
+## echo 
+## 
 echo To do:
 echo ------
 todo lsp A

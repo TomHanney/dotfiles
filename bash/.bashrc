@@ -115,10 +115,12 @@ export PATH=$PATH:/home/tom/scripts
 
 # Java installation
 JAVA_LOCATION=~/software/jdk1.7.0_67/bin
-echo Java location: $JAVA_LOCATION
 export PYCHARM_JDK=$JAVA_LOCATION/java
 export JAVA_HOME=$JAVA_LOCATION/java
 export PATH=$PATH:$JAVA_LOCATION
+
+# Cabal
+export PATH=/home/tom/.cabal/bin:$PATH
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile

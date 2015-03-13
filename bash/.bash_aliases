@@ -1,3 +1,11 @@
+#!/bin/bash
+
+## Create a .bashcfg file in the home directory and export environment variables
+## to set machine dependent file locations
+if [ -f ~/.bashcfg ]; then
+    . ~/.bashcfg
+fi
+
 ## Might be better to make a script to do this one day...esp if we need to 
 ## mkdir /mnt/gracie/...
 ## Remember to install cifs-utils to fix errors like:
@@ -23,6 +31,26 @@ alias apt-search='apt-cache search'
 ## shortcut searches in the cl history
 alias ch='history | grep'
 
-alias todo='/media/tom/hd/dotfiles/script/todo.txt_cli-2.9/todo.sh'
-alias sublime='/home/tom/software/sublime_text_3/sublime_text'
-alias pycharm='/home/tom/software/pycharm-community-3.4.1/bin/pycharm.sh'
+if [ -z "${TODO_DIR+x}" ]; then echo "alias todo not set";
+else alias todo=$TODO_DIR/'todo.sh';
+fi
+
+if [ -z "${SUBLIME_DIR+x}" ]; then echo "alias sublime not set"; 
+else alias sublime=$SUBLIME_DIR'/sublime_text';
+fi
+
+if [ -z "${PYCHARM_DIR+x}" ]; then echo "alias pycharm not set";
+else alias pycharm=$PYCHARM_DIR'/pycharm.sh';
+fi
+
+if [ -z "${ANDROID_STUDIO_DIR+x}" ]; then echo "alias android-studio not set";
+else alias android-studio=$ANDROID_STUDIO_DIR'/studio.sh';
+fi
+
+if [ -z "${YPM_DIR+x}" ]; then echo "alias ypm not set";
+else alias portfolio=$YPM_DIR'/yahoo-portfolio-manager';
+fi
+
+if [ -z "${HD+x}" ]; then echo "alias cdd not set";
+else alias cdd='cd '$HD;
+fi
