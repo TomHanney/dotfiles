@@ -34,6 +34,7 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 " set softtabstop=4
+set noexpandtab
 au! FileType python setl nosmartindent
 au FileType python set omnifunc=pythoncomplete#Complete
 au FileType java set omnifunc=javacomplete#Complete
