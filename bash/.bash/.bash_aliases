@@ -35,10 +35,6 @@ if [ -z "${TODO_DIR+x}" ]; then echo "alias todo not set";
 else alias todo=$TODO_DIR/'todo.sh';
 fi
 
-if [ -z "${SUBLIME_DIR+x}" ]; then echo "alias sublime not set"; 
-else alias sublime=$SUBLIME_DIR'/sublime_text';
-fi
-
 if [ -z "${PYCHARM_DIR+x}" ]; then echo "alias pycharm not set";
 else alias pycharm=$PYCHARM_DIR'/pycharm.sh';
 fi

@@ -19,7 +19,6 @@ function bashcfg {
 }
 
 bashcfg "export TODO_DIR='/media/tom/hd/dotfiles/script/todo.txt_cli-2.9'"
-bashcfg "export SUBLIME_DIR='/home/tom/software/sublime_text_3/'"
 bashcfg "export PYCHARM_DIR='/home/tom/software/pycharm-community-3.4.1/bin/'"
 bashcfg "export ANDROID_STUDIO_DIR='/home/tom/software/android-studio/bin/'"
 bashcfg "export YPM_DIR='/media/tom/hd/dev/haskell/yahoo/.cabal-sandbox/bin/'"
