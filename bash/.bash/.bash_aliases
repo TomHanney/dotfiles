@@ -2,8 +2,8 @@
 
 ## Create a .bashcfg file in the home directory and export environment variables
 ## to set machine dependent file locations
-if [ -f ~/.bashcfg ]; then
-    . ~/.bashcfg
+if [ -f ~/.bash/.bashcfg ]; then
+    . ~/.bash/.bashcfg
 fi
 
 ## Might be better to make a script to do this one day...esp if we need to 

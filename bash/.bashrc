@@ -102,12 +102,12 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f ~/.bash/.bash_aliases ]; then
+    . ~/.bash/.bash_aliases
 fi
 
-if [ -f ~/.bash_header ]; then
-    . ~/.bash_header
+if [ -f ~/.bash/.bash_header ]; then
+    . ~/.bash/.bash_header
 fi
 
 # Add my scripts folder to executables path
