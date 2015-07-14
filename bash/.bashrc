@@ -120,7 +120,7 @@ export JAVA_HOME=$JAVA_LOCATION/java
 export PATH=$PATH:$JAVA_LOCATION
 
 # Cabal
-export PATH=/home/tom/.cabal/bin:$PATH
+export PATH=/home/tom/.cabal/bin:/opt/ghc/7.8.4/bin:$PATH
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile

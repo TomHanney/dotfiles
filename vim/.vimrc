@@ -3,6 +3,23 @@ execute pathogen#infect()
 " set vim defaults in preference to those of vi
 set nocompatible
 
+" See https://github.com/gmarik/Vundle.vim
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'pbrisbin/vim-syntax-shakespeare'
+
+" All of your Plugins must be added before the following line
+call vundle#end()    
+
+
 " turn off .swp file creation
 set noswapfile
 
@@ -21,7 +38,7 @@ set showmode
 syntax on
 
 " Try to detect filetypes
-filetype on
+" filetype on
 
 " Enable loading indent file for filetype
 filetype plugin indent on

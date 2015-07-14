@@ -54,3 +54,5 @@ fi
 if [ -z "${HD+x}" ]; then echo "alias cdd not set";
 else alias cdd='cd '$HD;
 fi
+
+alias cricket='/media/tom/hd/dev/haskell/hurl/dist/build/hurl/hurl'
