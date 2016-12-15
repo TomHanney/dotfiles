@@ -106,3 +106,6 @@ set tags=./tags,tags;
 
 set background=dark
 "colorscheme monokai
+
+" set path to vimwiki files
+let g:vimwiki_list = [{'path': '$VIMWIKI/site/', 'path_html': '$VIMWIKI/html/'}]
